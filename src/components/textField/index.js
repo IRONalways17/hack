@@ -1,12 +1,11 @@
 import React from "react";
-import "./index.css";
+import "./TextField.css";
 
-function TextField ({labelText, onChange}) {
-
+function TextField({ labelText, onChange }) {
   return (
     <div className="textfield">
-        <label data-testid="label"></label>
-        <input data-testid="input" onChange={null}></input>
+      <label data-testid="label">{labelText}</label>
+      <input data-testid="input" onChange={onChange} />
     </div>
   );
 }
